@@ -139,6 +139,25 @@ The database schema is defined in [`sql/apartment.sql`](sql/apartment.sql). It i
 - **Owner/Tenant**
   - Register via the provided registration forms.
 
+
+## How to Generate the `vendor` Folder
+
+The `vendor` folder contains all third-party PHP libraries managed by Composer.  
+If you clone this repository and the `vendor` folder is missing, you can generate it by running:
+
+```sh
+composer install
+```
+
+**Steps:**
+1. Make sure [Composer](https://getcomposer.org/) is installed on your system.
+2. Open a terminal in the project root directory (where `composer.json` is located).
+3. Run the command above. Composer will download and install all dependencies into the `vendor` folder.
+
+> **Note:**  
+> Do **not** edit files in the `vendor` folder directly.  
+> If you add new dependencies, use `composer require package/name`.
+
 ## Key Files
 
 - [`index.php`](index.php): Landing page and login options.
